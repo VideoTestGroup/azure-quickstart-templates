@@ -136,7 +136,7 @@
       },
       "properties": {
         "version": "11",
-        "sslEnforcement": "Enabled",
+        "sslEnforcement": "Disabled",
         "storageProfile": {
           "backupRetentionDays": 7,
           "geoRedundantBackup": "Disabled",
