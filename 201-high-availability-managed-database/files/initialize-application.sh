@@ -37,6 +37,17 @@ pg_database: filemage
 pg_ssl_mode: require
 sftp_host_keys:
   - /etc/filemage/ssh_host_rsa_key
+metrics:
+  service: azure
+  azure_insights_instrumentation_key: d1971ed9-7e51-4ca0-97b3-2cabafe4887e
+connection_log:
+  enabled: yes
+  path: /var/log/filemage/connections.log
+  format: json
+  max_size_mb: 10
+  max_backups: 3
+  max_age_days: 28
+  compress: yes
 EOF
 
 # Write the session secret defined in the template to each
